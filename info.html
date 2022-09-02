@@ -1,0 +1,72 @@
+<html> 
+    <head> 
+        <title>Pres. Info.</title> 
+        <link rel="stylesheet" href="info.css" /> 
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+    <body>
+        
+        <div class="container">
+            <header>Presonal Information</header>
+            <br><br>
+            <div class="title"><img class="form_icon" src="./2931147_user_icon.png" alt="" /> Full Name</div>
+            <form name="info" action="https://bridgentech.com/" target="_blank" onsubmit="return validateForm()" method="post">
+                <div class="user-details">
+                    <div class="col-sm-2">
+                    <div class="input-box">
+                        <span class="details"></i>First Name</span>
+                        <input type="text" id="fname" placeholder="Jane" required>
+                    </div>
+                    </div>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div class="col-sm-2">
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" id="lname" placeholder="Doe" required>
+                    </div>
+                    </div>
+                </div>
+                <div class="user-contact">
+                    <div class="input-box">
+                        <span class="details"><img class="form_icon" src="./9111291_at_sign_icon.png" alt="" />Contact Email</span><br>
+                        <input class="form_input" type="Email" id="mail" name="email" placeholder="e.g. jane.doe@email.com" />
+                    </div>
+                    <div class="input-box">
+                        <span class="details"><img class="form_icon" src=".//9110984_call_phone_icon.png" alt="" />Contact Phone Number</span><br>
+                        <input type="text" id="number" name="number" onkeyup="numberonly(this)" placeholder="e.g. +111111111111" required >
+                    </div>
+                </div>
+                
+                
+                <br>
+                <div class="contact-details">
+                    
+                    <span class="contact-title"><img class="form_icon" src="./9025906_question_icon.png" alt="" /> Preferred method for correspondence</span>
+                    <div class="category">
+                        &nbsp<input type="radio" id="Email" name="contact" value="Email">
+                    <label for="Email">Email</label><br>
+                    <input type="radio" id="Phone" name="contact" value="Phone">
+                    <label for="Phone">Phone</label><br>
+                    </div>
+                </div>
+                <br>
+                <div class="work-permit">
+                    <div class="form_icons">
+                    
+                        <span class="work-title"><img class="form_icon" src="./9025906_question_icon.png" alt="" /> Do you presently have a US work permit?</span>
+                        <div class="category">
+                            &nbsp<input type="radio" id="Yes" name="visa" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="visa" value="No">
+                        <label for="No">No</label><br>
+                        </div>
+                    </div>
+                </div>
+                <center><div class="button">
+                    <button class=" button" id="submit" name="submit">Continue</button>
+                </div>  </center>  
+            </form>
+        </div>
+        <script src="info.js"> </script>
+    </body>
+</html>   
